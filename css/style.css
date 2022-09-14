@@ -105,16 +105,21 @@ body {
   background-color: var(--bgcolor);
 }
 
+/* container for content with 1200px and safe padding 10px from each side */
+
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+/* padding 94px for section according to figma design guidelines*/
 .section {
   padding: 94px 0px;
 }
+
+/* container for header to put in a row Logo, Navigation and Contacts. */
 
 .container-nav {
   display: flex;
@@ -127,6 +132,7 @@ body {
 
 .nav-panel {
   display: flex;
+  align-items: center;
 }
 
 .nav-logo {
@@ -137,11 +143,14 @@ body {
   color: inherit;
 }
 
+/* create space between Logo and Navigation */
 .nav-menu {
   display: flex;
   align-items: center;
   margin-left: 93px;
 }
+
+/* create space between navigation's items */
 
 .nav-menu .nav-menu-item:not(:first-child) {
   margin-left: 50px;
@@ -181,36 +190,48 @@ body {
   color: var(--modify-text-color);
 }
 
+/* another container to display background on full screen */
 .bg-container {
   background-color: var(--header-footer-bgcolor);
 }
+
+/* add height to section */
 
 .main-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 600px;
 }
 
 .main-title {
   margin-bottom: 30px;
+  width: 696px;
   text-align: center;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--bgcolor);
 }
+
 .btn-primary {
   padding: 10px 32px;
+  min-width: 216px;
+
   cursor: pointer;
   border: none;
   border-radius: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+
   color: var(--bgcolor);
   background-color: var(--modify-text-color);
 }
@@ -223,6 +244,7 @@ body {
 .company-advantages {
   padding-bottom: 45px;
 }
+
 .advantages-list {
   display: flex;
   align-items: center;
@@ -231,6 +253,7 @@ body {
 
 .advantages-title {
   margin-bottom: 10px;
+
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -242,18 +265,18 @@ body {
   color: var(--submain-text-color);
 }
 
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.2;
-}
-
+/* reduce padding between two sections */
 .work-proccess {
   padding-top: 45px;
 }
 
 .work-proccess-title {
   margin-bottom: 50px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
 }
 
 .work-proccess-list {
@@ -262,21 +285,30 @@ body {
   justify-content: space-between;
 }
 
+.our-team-title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
 .our-team-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.our-team-title {
-  margin-bottom: 50px;
-}
 .our-team-photo {
+  display: block;
   margin-bottom: 30px;
 }
+
 .team-member-name {
   margin-bottom: 10px;
   text-align: center;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
@@ -308,6 +340,7 @@ body {
 
 .footer-address {
   margin-bottom: 9px;
+
   font-style: normal;
   line-height: 1.7;
   color: var(--bgcolor);
@@ -319,6 +352,7 @@ body {
 
 .footer-contacts-link {
   display: block;
+
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -375,6 +409,7 @@ body {
 .project-name {
   margin-bottom: 4px;
   font-size: 18px;
+  font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 2;
 }
