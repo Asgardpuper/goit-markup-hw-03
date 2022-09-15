@@ -285,6 +285,10 @@ body {
   justify-content: space-between;
 }
 
+.our-team {
+  background-color: var(--filter-btn-color);
+}
+
 .our-team-title {
   margin-bottom: 50px;
   text-align: center;
@@ -403,7 +407,11 @@ body {
 
 .project-image {
   display: block;
-  margin-bottom: 20px;
+}
+
+.add-border {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .project-name {
