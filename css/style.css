@@ -306,7 +306,11 @@ body {
 
 .our-team-photo {
   display: block;
-  margin-bottom: 30px;
+}
+
+.team-member-card {
+  background-color: var(--bgcolor);
+  padding: 30px 61px;
 }
 
 .team-member-name {
